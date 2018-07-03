@@ -1,0 +1,20 @@
+* {
+ box-sizing: border-box;
+ background-color: indianred;
+}
+
+.wrapper {
+ display: grid;
+ margin: 0 auto;
+ width: 70vw;
+ grid-template-columns: 2fr 6fr;
+ grid-template-rows: 1fr 8fr 2fr;
+ height: 100vh;
+ grid-gap: 10px;
+}
+
+.header {
+ grid-column: 1/3;
+}
+
+.
