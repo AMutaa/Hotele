@@ -141,12 +141,28 @@ p {
  margin: auto 0;
 }
 
-.user {}
-
 .not {
  margin: auto 15px;
+ position: relative;
 }
 
 img {
  margin: auto 0;
+}
+
+.num {
+ position: absolute;
+ text-align: center;
+ justify-content: center;
+ margin: 0;
+ padding: 3px 0;
+ top: -7px;
+ right: -7px;
+ width: 1.7em;
+ height: 1.7em;
+ color: white;
+ background-color: red;
+ border-radius: 50%;
+ font-size: .7em;
+ -webkit-box-pack: center;
 }
