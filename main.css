@@ -3,7 +3,7 @@
 }
 
 body {
- font-family: 'Roboto', sans-serif;
+ font-family: 'Open Sans', sans-serif;
  background-color: indianred;
  min-height: 100vh;
 }
@@ -128,7 +128,7 @@ input {
 
 .comments {
  display: grid;
- grid-template-rows: 3fr 3fr 1fr;
+ grid-template-rows: 3fr 3fr 0.8fr;
  grid-gap: 5px;
 }
 
@@ -174,25 +174,33 @@ img {
 }
 
 .fenway {
- background: url(http://amtrakdowneaster.com/sites/default/files/lander-images/aquarium.jpg);
+ background: url(https://amandaswinhart.files.wordpress.com/2012/05/20120514_as_sea_ga_0016.jpg);
 }
 
 .aquarium {
- background: url(https://amandaswinhart.files.wordpress.com/2012/05/20120514_as_sea_ga_0016.jpg);
+ background: url(http://amtrakdowneaster.com/sites/default/files/lander-images/aquarium.jpg);
 }
 
 .back {
  background-size: 100% 100%;
  background-repeat: no-repeat;
- padding-top: 150px;
- padding: 150px 20px 0 20px;
+ padding: 150px 10px 0 10px;
 }
 
 .thu {
  border-radius: 50px;
  float: left;
+ margin-right: 10px;
 }
 
-h3 {
+h5 {
  color: white;
+ margin: 0 auto;
+ font-weight: normal;
+ font-size: 15px;
+}
+
+.area {
+ font-size: 11px;
+ padding: 0;
 }
