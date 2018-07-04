@@ -111,7 +111,7 @@ input {
 
 .title {
  grid-column: 1/-1;
- background-color: #333333;
+ background-color: #F2F0F0;
 }
 
 .fo {
@@ -170,4 +170,29 @@ img {
 .thumb {
  width: 100%;
  height: 100%;
+ z-index: -1;
+}
+
+.fenway {
+ background: url(http://amtrakdowneaster.com/sites/default/files/lander-images/aquarium.jpg);
+}
+
+.aquarium {
+ background: url(https://amandaswinhart.files.wordpress.com/2012/05/20120514_as_sea_ga_0016.jpg);
+}
+
+.back {
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+ padding-top: 150px;
+ padding: 150px 20px 0 20px;
+}
+
+.thu {
+ border-radius: 50px;
+ float: left;
+}
+
+h3 {
+ color: white;
 }
