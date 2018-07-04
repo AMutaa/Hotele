@@ -89,6 +89,18 @@ input {
 .footer {
  grid-row: 3/-1;
  grid-column: 2/3;
+ text-align: center;
+}
+
+.book {
+ width: 200px;
+ height: 60px;
+ font-size: 22px;
+ color: lightgray;
+ margin: 30px auto;
+ border: none;
+ background-color: red;
+ border-radius: 100px;
 }
 
 .overview {
@@ -105,17 +117,22 @@ input {
 
 .fo {
  background-color: red;
+ border-radius: 10px;
 }
 
 .detail {
  padding: 20px 20px;
  display: grid;
  grid-template-columns: 2fr 1fr;
- grid-gap: 10px;
+ grid-gap: 50px;
 }
 
 .comments {
  display: grid;
  grid-template-rows: 3fr 3fr 1fr;
  grid-gap: 5px;
+}
+
+p {
+ margin-bottom: 40px;
 }
