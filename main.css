@@ -3,6 +3,10 @@
  background-color: indianred;
 }
 
+body {
+ font-family: 'Roboto', sans-serif;
+}
+
 .wrapper {
  display: grid;
  margin: 0 auto;
@@ -29,14 +33,20 @@
 
 ul {
  list-style: none;
+ padding: 0;
+}
+
+li {
+ height: 50px;
 }
 
 a {
  text-decoration: none;
+ color: aliceblue;
 }
 
 span {
- font-size: 20px;
+ font-size: 17px;
 }
 
 .bod {
