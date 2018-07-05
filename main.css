@@ -5,11 +5,11 @@
 body {
  font-family: 'Open Sans', sans-serif;
  color: #240b36;
- background: #c31432;
+ background: #F0C27B;
  /* fallback for old browsers */
- background: -webkit-linear-gradient(to right, #240b36, #c31432);
+ background: -webkit-linear-gradient(to right, #4B1248, #F0C27B);
  /* Chrome 10-25, Safari 5.1-6 */
- background: linear-gradient(to right, #240b36, #c31432);
+ background: linear-gradient(to right, #4B1248, #F0C27B);
  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
  min-height: 100vh;
 }
@@ -18,9 +18,9 @@ body {
  display: grid;
  margin: 0 auto;
  padding: 50px 0 50px 0;
- width: 70vw;
+ width: 80vw;
  grid-template-columns: 2fr 10fr;
- grid-template-rows: 1fr 10fr 1.5fr;
+ grid-template-rows: 0.2fr 6fr 0.5fr;
 }
 
 .header {
@@ -41,7 +41,7 @@ ul {
  padding: 0;
 }
 
-li {
+.bou {
  height: 50px;
  padding: 15px 10px;
  margin: 10px 0;
@@ -100,17 +100,10 @@ input {
  grid-column: 2/3;
  text-align: center;
  background-color: white;
-}
-
-.book {
- width: 200px;
- height: 60px;
- font-size: 20px;
- color: lightgray;
- margin: 30px auto;
- border: none;
- background-color: #912537;
- border-radius: 100px;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 2fr;
+ grid-gap: 10px;
+ padding: 10px 30px;
 }
 
 .overview {
@@ -144,7 +137,9 @@ input {
 }
 
 p {
- margin-bottom: 40px;
+ margin-bottom: 30px;
+ line-height: 1.5em;
+ font-size: 17px;
 }
 
 .use {
@@ -235,10 +230,17 @@ h5 {
 .attractions {
  display: grid;
  grid-template-columns: 1fr 1fr;
- grid-template-rows: 2fr 0.5fr;
+ grid-template-rows: 2fr 0.5fr 0.5fr;
  grid-gap: 10px;
  border-top: 1px solid rgba(128, 128, 128, 0.144);
  padding: 0 30px;
+}
+
+.moree {
+ grid-column: 1/-1;
+ text-align: center;
+ margin: auto auto;
+ font-size: 20px;
 }
 
 .tor {
@@ -269,7 +271,7 @@ h5 {
 .description {
  box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
  background-color: #D7DBE0;
- padding: 0 30px;
+ padding: 30px 30px;
 }
 
 .rec {
@@ -278,7 +280,7 @@ h5 {
  grid-column: 1/-1;
  display: flex;
  flex-direction: row;
- margin: 0 auto;
+ margin: 10px auto;
  width: 100%;
 }
 
