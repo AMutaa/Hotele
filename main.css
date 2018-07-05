@@ -1,9 +1,13 @@
+/* MAIN STYLES */
+
 * {
  box-sizing: border-box;
 }
 
 body {
  font-family: 'Open Sans', sans-serif;
+ font-weight: 400;
+ line-height: 1.6;
  color: #240b36;
  background: #F0C27B;
  /* fallback for old browsers */
@@ -11,32 +15,18 @@ body {
  /* Chrome 10-25, Safari 5.1-6 */
  background: linear-gradient(to right, #4B1248, #F0C27B);
  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ background-repeat: no-repeat;
+ background-size: cover;
  min-height: 100vh;
 }
 
 .wrapper {
  display: grid;
- margin: 0 auto;
- padding: 50px 0 50px 0;
- width: 80vw;
+ margin: 50px auto;
+ padding: 0;
+ width: 70%;
  grid-template-columns: 2fr 10fr;
- grid-template-rows: 0.2fr 6fr 0.5fr;
-}
-
-.header {
- grid-column: 1/3;
- background-color: white;
- display: flex;
- padding: 0 20px;
-}
-
-.side_nav {
- grid-column: 1/2;
- grid-row: 2/4;
- background-color: #333333;
- display: flex;
- flex-direction: column;
- justify-content: space-between;
+ grid-template-rows: 0.2fr 4fr 0.5fr;
 }
 
 ul {
@@ -44,20 +34,61 @@ ul {
  padding: 0;
 }
 
-.bou {
- height: 50px;
- padding: 15px 10px;
- margin: 10px 0;
-}
-
 a {
  text-decoration: none;
- color: aliceblue;
+ color: #240b36;
 }
 
-span {
+h4 {
+ margin-right: 70px;
+}
+
+h2 {
+ margin: auto 0;
+ float: left;
+}
+
+h5 {
+ color: white;
+ font-size: 15px;
+ margin: 0 auto;
+}
+
+p {
+ margin-bottom: 10px;
  font-size: 17px;
- padding-left: 15px;
+}
+
+input {
+ border: none;
+ font-size: 20px;
+ outline: none;
+ width: 90%;
+ background-color: #F2F0F0;
+ border-radius: 5px;
+ padding-left: 5px;
+}
+
+/* HEADER STYLES */
+
+.header {
+ grid-column: 1/3;
+ background-color: white;
+ display: flex;
+ flex-wrap: wrap;
+ padding: 0 20px;
+ align-content: space-around;
+ justify-content: space-between;
+}
+
+.logo {
+ width: 75px;
+ height: 70px;
+}
+
+.use {
+ float: right;
+ margin: auto 0;
 }
 
 .searchbox {
@@ -72,91 +103,26 @@ span {
  height: 40px;
 }
 
-input {
- border: none;
- font-size: 20px;
- outline: none;
- width: 90%;
- background-color: #F2F0F0;
-}
-
 .search {
  outline: none;
  border: none;
  background-color: #F2F0F0;
 }
 
-.bod {
- background: #8e9eab;
- /* fallback for old browsers */
- background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
- /* Chrome 10-25, Safari 5.1-6 */
- background: linear-gradient(to right, #eef2f3, #8e9eab);
- /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
- display: grid;
- grid-template-rows: 2fr 3.5fr;
- padding: 20px 20px;
+.user {
+ display: flex;
 }
 
-.footer {
- grid-row: 3/-1;
- grid-column: 2/3;
- text-align: center;
- background-color: white;
- display: grid;
- grid-template-columns: 1fr 1fr 1fr 2fr;
- grid-gap: 10px;
- padding: 10px 30px;
-}
-
-.overview {
- display: grid;
- grid-template-columns: 1fr 1fr 1fr;
- grid-template-rows: 3fr 1fr;
- grid-gap: 10px;
-}
-
-.title {
- grid-column: 1/-1;
- background-color: #F2F0F0;
-}
-
-.fo {
- background-color: #912537;
- border-radius: 10px;
-}
-
-.detail {
- padding: 20px 20px;
- display: grid;
- grid-template-columns: 2fr 1fr;
- grid-gap: 50px;
-}
-
-.comments {
- display: grid;
- grid-template-rows: 3fr 3fr 0.8fr;
- grid-gap: 5px;
-}
-
-p {
- margin-bottom: 30px;
- line-height: 1.5em;
- font-size: 17px;
-}
-
-.use {
- float: right;
- margin: auto 0;
+.user_image {
+ display: flex;
+ height: 100%;
+ margin: 0;
+ align-items: center;
 }
 
 .not {
  margin: auto 15px;
  position: relative;
-}
-
-img {
- margin: auto 0;
 }
 
 .num {
@@ -176,74 +142,110 @@ img {
  -webkit-box-pack: center;
 }
 
+/* SIDE NAV STYLES */
+
+.side_nav {
+ grid-column: 1/2;
+ grid-row: 2/4;
+ background-color: #333333;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+.bou {
+ height: 50px;
+ padding: 15px 10px;
+ margin: 10px 0;
+}
+
+.men {
+ color: aliceblue;
+}
+
+#items {
+ font-size: 17px;
+ padding-left: 15px;
+}
+
+.design {
+ text-align: center;
+ margin-bottom: 25px;
+}
+
+/* MAIN CONTENT STYLES */
+
+.content {
+ background: #8e9eab;
+ /* fallback for old browsers */
+ background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
+ /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #eef2f3, #8e9eab);
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ display: grid;
+ grid-template-rows: 1.5fr 2.5fr;
+ padding: 20px 20px;
+}
+
+.overview {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 3fr 1fr;
+ grid-gap: 10px;
+}
+
 .thumb {
  width: 100%;
  height: 100%;
  z-index: -1;
 }
 
-.fenway {
- background: url(https://amandaswinhart.files.wordpress.com/2012/05/20120514_as_sea_ga_0016.jpg);
+.detail {
+ padding: 20px 20px;
+ display: grid;
+ grid-template-columns: 2fr 1fr;
+ grid-gap: 10px;
 }
 
-.aquarium {
- background: url(http://amtrakdowneaster.com/sites/default/files/lander-images/aquarium.jpg);
-}
+/* TITLE STYLES*/
 
-.back {
- background-size: 100% 100%;
- background-repeat: no-repeat;
- padding: 210px 10px 0 10px;
-}
-
-.thu {
- border-radius: 50px;
- float: left;
- margin-right: 10px;
-}
-
-a {
- color: #240b36;
-}
-
-h4 {
- color: #240b36;
- font-weight: normal;
- margin-right: 70px;
-}
-
-h2 {
- margin-left: 10px;
- font-weight: normal;
- float: left;
-}
-
-h5 {
- color: white;
+.title {
+ grid-column: 1/-1;
+ background-color: #F2F0F0;
+ display: flex;
  margin: 0 auto;
- font-weight: normal;
- font-size: 15px;
+ width: 100%;
+ justify-content: space-between;
+ padding-right: 40px;
 }
 
-.area {
- font-size: 11px;
- padding: 0;
+.rev {
+ margin: auto 30px;
+}
+
+.revi {
+ font-size: 12px;
+ padding: 0
+}
+
+.opi {
+ display: flex;
+ float: right;
+}
+
+.description {
+ display: grid;
+ grid-template-rows: 0.4fr 0.4fr 0.2fr 0.2fr;
+ box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
+ background-color: #D7DBE0;
 }
 
 .attractions {
  display: grid;
  grid-template-columns: 1fr 1fr;
- grid-template-rows: 2fr 0.5fr 0.5fr;
  grid-gap: 10px;
  border-top: 1px solid rgba(128, 128, 128, 0.144);
- padding: 0 30px;
-}
-
-.moree {
- grid-column: 1/-1;
- text-align: center;
- margin: auto auto;
- font-size: 20px;
+ margin: 20px auto;
 }
 
 .tor {
@@ -267,14 +269,15 @@ h5 {
  background-size: cover;
 }
 
-.men {
- color: aliceblue;
+.more {
+ margin: auto 0;
 }
 
-.description {
- box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
- background-color: #D7DBE0;
- padding: 30px 30px;
+.moree {
+ grid-column: 1/-1;
+ text-align: center;
+ margin: auto auto;
+ font-size: 20px;
 }
 
 .rec {
@@ -287,38 +290,35 @@ h5 {
  width: 100%;
 }
 
-.title {
- display: flex;
- margin: 0 auto;
- width: 100%;
- justify-content: space-between;
- padding-right: 40px;
-}
-
 .loc {
  border: 3px solid #D7DBE0;
  border-radius: 50px;
- margin-right: -15px;
  width: 50px;
  height: 50px;
+ margin: auto 0 auto -15px;
 }
 
-.rev {
- margin: auto 15px;
+/* GUIDE STYLES */
+
+.guide {
+ display: grid;
+ grid-template-rows: 3fr 3fr 0.8fr;
+ grid-gap: 5px;
+ text-align: center;
 }
 
-.revi {
- font-size: 12px;
- padding: 0
+.fenway {
+ background: url(https://amandaswinhart.files.wordpress.com/2012/05/20120514_as_sea_ga_0016.jpg);
 }
 
-.opi {
- display: flex;
- float: right;
+.aquarium {
+ background: url(http://amtrakdowneaster.com/sites/default/files/lander-images/aquarium.jpg);
 }
 
-.more {
- margin: auto;
+.back {
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+ padding: 210px 10px 0 10px;
 }
 
 .but {
@@ -331,9 +331,17 @@ h5 {
  border: none;
 }
 
-.foo {
- margin: 3px auto;
- font-weight: lighter;
+/* FOOTER STYLES */
+
+.footer {
+ grid-row: 3/-1;
+ grid-column: 2/3;
+ text-align: center;
+ background-color: white;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 2fr;
+ grid-gap: 10px;
+ padding: 10px 30px;
 }
 
 .sign {
@@ -346,10 +354,5 @@ h5 {
 }
 
 .subi {
- margin: auto auto;
-}
-
-.design {
- text-align: center;
- margin-bottom: 25px;
+ margin: auto 50px;
 }
