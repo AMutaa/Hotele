@@ -158,6 +158,9 @@
  .moree {
   font-size: 15px;
  }
+ .rec {
+  padding-top: 0;
+ }
  .loc {
   border: 2px solid #D7DBE0;
   width: 40px;
@@ -169,6 +172,10 @@
   grid-template-rows: 1fr 1fr 0.3fr;
   grid-template-columns: 1fr;
   grid-gap: 5px;
+ }
+ .word {
+  padding: 0 60px 0 0;
+  font-size: 15px;
  }
  /* FOOTER STYLES */
  .footer {
@@ -297,6 +304,7 @@
  }
  .rec {
   margin: 0 auto;
+  padding-top: 0;
  }
  .tor {
   margin: 0;
@@ -320,6 +328,10 @@
   grid-column: 1/-1;
  }
  .moreee {
+  font-size: 15px;
+ }
+ .word {
+  padding: 0 50px 0 0;
   font-size: 15px;
  }
  /* FOOTER STYLES */

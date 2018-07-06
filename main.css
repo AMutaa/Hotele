@@ -24,7 +24,7 @@ body {
  display: grid;
  margin: 50px auto;
  padding: 0 10px;
- width: 70%;
+ width: 80%;
  grid-template-columns: 2fr 10fr;
  grid-template-rows: 0.2fr 4fr 0.5fr;
 }
@@ -47,6 +47,7 @@ h4 {
 h2 {
  margin: auto 0;
  float: left;
+ font-weight: normal;
 }
 
 h5 {
@@ -160,7 +161,12 @@ input {
 .side_nav {
  grid-column: 1/2;
  grid-row: 2/4;
- background-color: #333333;
+ background: #000000;
+ /* fallback for old browsers */
+ background: -webkit-linear-gradient(to right, #434343, #000000);
+ /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #434343, #000000);
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
  display: flex;
  flex-direction: column;
  justify-content: space-between;
@@ -196,14 +202,14 @@ input {
  background: linear-gradient(to right, #eef2f3, #8e9eab);
  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
  display: grid;
- grid-template-rows: 1.5fr 2.5fr;
+ grid-template-rows: 0.8fr 1.6fr;
  padding: 20px 20px;
 }
 
 .overview {
  display: grid;
  grid-template-columns: 1fr 1fr 1fr;
- grid-template-rows: 3fr 1fr;
+ grid-template-rows: 15em 6em;
  grid-gap: 10px;
 }
 
@@ -300,14 +306,15 @@ input {
  display: flex;
  flex-direction: row;
  margin: 10px auto;
+ padding-top: 30px;
  width: 100%;
 }
 
 .loc {
  border: 3px solid #D7DBE0;
  border-radius: 50px;
- width: 50px;
- height: 50px;
+ width: 65px;
+ height: 65px;
  margin: auto 0 auto -15px;
 }
 
@@ -318,6 +325,20 @@ input {
  grid-template-rows: 3fr 3fr 0.8fr;
  grid-gap: 5px;
  text-align: center;
+}
+
+.word {
+ color: rgba(255, 255, 255, 0.89);
+ padding: 0 50px 0 0;
+ font-size: 13px;
+ background-color: #0000008f;
+}
+
+.roc {
+ width: 45px;
+ height: 45px;
+ float: left;
+ border-radius: 50px;
 }
 
 .fenway {
@@ -331,12 +352,12 @@ input {
 .back {
  background-size: 100% 100%;
  background-repeat: no-repeat;
- padding: 210px 10px 0 10px;
+ padding: 210px 10px 10px 20px;
 }
 
 .but {
  color: white;
- background: #912537;
+ background: #b9263cbe;
  padding: 10px 10px;
  font-weight: normal;
  font-size: 15px;
@@ -355,6 +376,7 @@ input {
  grid-template-columns: 1fr 1fr 1fr 2fr;
  grid-gap: 10px;
  padding: 10px 30px;
+ opacity: 0.8;
 }
 
 .sign {
