@@ -9,21 +9,21 @@ body {
  font-weight: 400;
  line-height: 1.6;
  color: #240b36;
- background: #F0C27B;
+ background: #fffbd5;
  /* fallback for old browsers */
- background: -webkit-linear-gradient(to right, #4B1248, #F0C27B);
+ background: -webkit-linear-gradient(to right, #b20a2c, #fffbd5);
  /* Chrome 10-25, Safari 5.1-6 */
- background: linear-gradient(to right, #4B1248, #F0C27B);
+ background: linear-gradient(to right, #b20a2c, #fffbd5);
  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
  background-repeat: no-repeat;
- background-size: cover;
+ background-size: 100% 100%;
  min-height: 100vh;
 }
 
 .wrapper {
  display: grid;
  margin: 50px auto;
- padding: 0;
+ padding: 0 10px;
  width: 70%;
  grid-template-columns: 2fr 10fr;
  grid-template-rows: 0.2fr 4fr 0.5fr;
@@ -69,6 +69,17 @@ input {
  padding-left: 5px;
 }
 
+.noti {
+ height: 2em;
+ width: 2em;
+}
+
+.ima {
+ height: 30px;
+ width: 30px;
+ color: white;
+}
+
 /* HEADER STYLES */
 
 .header {
@@ -100,7 +111,7 @@ input {
  border-radius: 100px;
  margin: auto;
  width: 50%;
- height: 40px;
+ height: 30px;
 }
 
 .search {
