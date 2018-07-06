@@ -37,6 +37,7 @@ ul {
 a {
  text-decoration: none;
  color: #240b36;
+ cursor: pointer;
 }
 
 h4 {
@@ -316,6 +317,7 @@ input {
  width: 65px;
  height: 65px;
  margin: auto 0 auto -15px;
+ cursor: pointer;
 }
 
 /* GUIDE STYLES */
@@ -332,6 +334,7 @@ input {
  padding: 0 50px 0 0;
  font-size: 13px;
  background-color: #0000008f;
+ cursor: pointer;
 }
 
 .roc {
@@ -339,6 +342,7 @@ input {
  height: 45px;
  float: left;
  border-radius: 50px;
+ cursor: pointer;
 }
 
 .fenway {
