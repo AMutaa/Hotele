@@ -101,6 +101,19 @@ input {
  height: 70px;
 }
 
+.logoo {
+ font-family: 'Italianno', cursive;
+ font-size: 35px;
+ margin: auto 0;
+ padding: none;
+ color: #912537
+}
+
+.copyi {
+ font-weight: lighter;
+ font-size: 12px;
+}
+
 .use {
  float: right;
  margin: auto 0;
